@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      CoderDocs - Bootstrap 4 Documentation Template For Software Projects
+    </title>
+
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Bootstrap 4 Template For Software Startups"
+    />
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media" />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+
+    <!-- Plugins CSS -->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/plugins/simplelightbox/simple-lightbox.min.css"
+    />
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css" />
+  </head>
+
+  <body class="docs-page">
+    <header class="header fixed-top">
+      <div class="branding docs-branding">
+        <div class="container-fluid position-relative py-2">
+          <div class="docs-logo-wrapper">
+            <button
+              id="docs-sidebar-toggler"
+              class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none"
+              type="button"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="site-logo"></div>
+          </div>
+          <!--//docs-logo-wrapper-->
+          <div
+            class="docs-top-utilities d-flex justify-content-end align-items-center"
+          >
+            <!-- <div class="top-search-box d-none d-lg-flex">
+                        <form class="search-form">
+                            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+                            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div> -->
+            <ul
+              class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex"
+            >
+              <li class="list-inline-item">
+                <a
+                  href="https://github.com/curiouslearning/FeedTheMonsterJS.git"
+                  ><i class="fab fa-github fa-fw"></i
+                ></a>
+              </li>
+            </ul>
+            <!--//social-list-->
+          </div>
+          <!--//docs-top-utilities-->
+        </div>
+        <!--//container-->
+      </div>
+      <!--//branding-->
+    </header>
+    <!--//header-->
+    <!--//header-->
+
+    <div class="docs-wrapper">
+      <div id="docs-sidebar" class="docs-sidebar">
+        <div class="top-search-box d-lg-none p-3">
+          <form class="search-form">
+            <input
+              type="text"
+              placeholder="Search the docs..."
+              name="search"
+              class="form-control search-input"
+            />
+            <button type="submit" class="btn search-btn" value="Search">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <nav id="docs-nav" class="docs-nav navbar">
+          <ul class="section-items list-unstyled nav flex-column pb-3">
+            <li class="nav-item section-title">
+              <a class="nav-link scrollto active" href="#section-1"
+                ><span class="theme-icon-holder me-2"
+                  ><i class="fas fa-map-signs"></i></span
+                >Introduction</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-1-1">Service Worker</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-1-2">Workbox Config</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-1-3"
+                >PWA APK Integration</a
+              >
+            </li>
+            <li class="nav-item section-title mt-3">
+              <a class="nav-link scrollto" href="#section-2"
+                ><span class="theme-icon-holder me-2"
+                  ><i class="fas fa-arrow-down"></i></span
+                >Installation</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-2-1">Manifest</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-2-2"
+                >Workbox Installation</a
+              >
+            </li>
+            <li class="nav-item section-title mt-3">
+              <a class="nav-link scrollto" href="#section-4"
+                ><span class="theme-icon-holder me-2"
+                  ><i class="fas fa-cogs"></i></span
+                >Integrations</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-4-1">Service Worker</a>
+            </li>
+            <li class="nav-item section-title mt-3">
+              <a class="nav-link scrollto" href="#section-5"
+                ><span class="theme-icon-holder me-2"
+                  ><i class="fas fa-tools"></i></span
+                >Bridge to container app</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-5-1">Grey background</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-5-2">Online propmt</a>
+            </li>
+          </ul>
+        </nav>
+        <!--//docs-nav-->
+      </div>
+      <!--//docs-sidebar-->
+      <div class="docs-content">
+        <div class="container">
+          <article class="docs-article" id="section-1">
+            <header class="docs-header">
+              <h1 class="docs-heading">
+                Introduction
+                <span class="docs-time">Last updated: 2023-03-06</span>
+              </h1>
+              <section class="docs-intro">
+                <p>
+                  Feed The Monster teaches your child the fundamentals of
+                  reading, which can be played in offline mode as Progressive
+                  web app.
+                </p>
+              </section>
+            </header>
+            <section class="docs-section" id="item-1-1">
+              <h2 class="section-heading">Service worker</h2>
+              <p>
+                A Service Worker is a JavaScript file that runs in the
+                background of a web page, independent of the web page itself. It
+                allows developers to build offline-first web applications by
+                caching files and assets, intercepting network requests. In this
+                project we used service worker to cache monster assets and
+                dynamic url's for the audios.
+              </p>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-1-2">
+              <h2 class="section-heading">Workbox Config</h2>
+              <p>
+                Workbox is a JavaScript library developed by Google that
+                simplifies the process of building Progressive Web Apps (PWAs).
+                It provides a set of tools and libraries for managing offline
+                caching and serving of web assets, such as JavaScript files,
+                images, and stylesheets. With Workbox, developers can easily
+                create service workers to cache and serve resources, handle
+                network requests, and provide an offline experience for their
+                users. Workbox also offers various caching strategies, including
+                network-first, cache-first, and stale-while-revalidate, to
+                optimize the performance of web applications. In addition to
+                caching and offline capabilities, Workbox provides tools for
+                pre-caching and precaching assets, routing requests to specific
+                cache strategies, and generating manifest files for web apps.
+                Overall, Workbox simplifies the process of building PWAs and
+                improves the user experience by providing reliable offline
+                access to web apps and reducing network dependencies.In this
+                project workbox is used to notify the service worker about the
+                update when the changes are done in any code and file.
+              </p>
+              <!--//table-responsive-->
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-1-3">
+              <h2 class="section-heading">PWA APK Integration</h2>
+              <p>
+                Vivamus efficitur fringilla ullamcorper. Cras condimentum
+                condimentum mauris, vitae facilisis leo. Aliquam sagittis purus
+                nisi, at commodo augue convallis id. Sed interdum turpis quis
+                felis bibendum imperdiet. Mauris pellentesque urna eu leo
+                gravida iaculis. In fringilla odio in felis ultricies porttitor.
+                Donec at purus libero. Vestibulum libero orci, commodo nec arcu
+                sit amet, commodo sollicitudin est. Vestibulum ultricies
+                malesuada tempor.
+              </p>
+            </section>
+          </article>
+
+          <article class="docs-article" id="section-2">
+            <header class="docs-header">
+              <h1 class="docs-heading">Installation</h1>
+              <section class="docs-intro">
+                <p>
+                  In order to utilize the contents of this repository, we will
+                  need to install the Node Package Manager locally on a
+                  development machine using the command prompt:
+                </p>
+                <div class="docs-code-block">
+                  <pre
+                    class="shadow-lg rounded"
+                  ><code class="json hljs"> npm install npm@latest -g
+              </code></pre>
+                </div>
+                <!--//docs-code-block-->
+              </section>
+              <!--//docs-intro-->
+            </header>
+            <section class="docs-section" id="item-2-1">
+              <h2 class="section-heading">Manifest</h2>
+              <p>
+                A manifest file is a file that contains important information
+                about a software project, such as its version number,
+                dependencies, and configuration settings. The file is typically
+                named "manifest.json" and is located in the root directory of
+                the project. The manifest file serves as a blueprint for the
+                project, providing a central location for developers to specify
+                project details and settings. It is used by various tools and
+                platforms, including build systems, package managers, and web
+                browsers. For example, in web development, the manifest file is
+                used to provide metadata about a Progressive Web App (PWA), such
+                as its name, icons, and starting URL. This information is used
+                by web browsers to install the PWA on a user's device and
+                provide a seamless app-like experience. Overall, the manifest
+                file is an essential component of modern software development,
+                allowing developers to define and manage project settings in a
+                standardized way
+              </p>
+            </section>
+            <section class="docs-section" id="item-2-2">
+              <h2 class="section-heading">Workbox Installation</h2>
+              <p>You can install Workbox via npm by running the command :</p>
+              <div class="docs-code-block">
+                <pre
+                  class="shadow-lg rounded"
+                ><code class="json hljs" style="color: white;">  npm install workbox-cli --save-dev
+              </code></pre>
+              </div>
+              <p>
+                Workbox provides a variety of configuration options to customize
+                your service worker. You can create a configuration file for
+                Workbox by running the command:
+              </p>
+              <div class="docs-code-block">
+                <pre
+                  class="shadow-lg rounded"
+                ><code class="json hljs" style="color: white;">  npx workbox wizard
+               </code></pre>
+              </div>
+              <p>
+                The Workbox wizard will prompt you to answer a series of
+                questions to generate your configuration file, customize as per
+                requirement.
+              </p>
+              <p>
+                After you answer all the questions, the Workbox wizard will
+                generate a configuration file for you. The file will be named
+                workbox-config.js
+              </p>
+              <p>At last run workbox generateSW workbox-config.js</p>
+            </section>
+            <!--//section-->
+            <!--//section-->
+          </article>
+          <!--//docs-article-->
+
+          <!--//docs-article-->
+
+          <article class="docs-article" id="section-4">
+            <header class="docs-header">
+              <h1 class="docs-heading">Intergrations</h1>
+              <section class="docs-intro">
+                <p>
+                  Section intro goes here. Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Quisque finibus condimentum nisl
+                  id vulputate. Praesent aliquet varius eros interdum suscipit.
+                  Donec eu purus sed nibh convallis bibendum quis vitae turpis.
+                  Duis vestibulum diam lorem, vitae dapibus nibh facilisis a.
+                  Fusce in malesuada odio.
+                </p>
+              </section>
+              <!--//docs-intro-->
+            </header>
+            <section class="docs-section" id="item-4-1">
+              <h2 class="section-heading">Service Worker</h2>
+              <p>
+                To Register the Service Worker in your main JavaScript file,
+                you'll need to register the Service Worker by calling the
+                navigator.serviceWorker.register() method. This method takes the
+                path to the Service Worker file as a parameter and returns a
+                Promise.
+              </p>
+              <div class="docs-code-block">
+                <pre
+                  class="shadow-lg rounded"
+                ><code class="json hljs" style="color: white;">  
+if ("serviceWorker" in navigator) {
+	navigator.serviceWorker.register('/sw.js')
+	  .then(registration => {
+		console.log('Service Worker registered');
+	  })
+	  .catch(error => {
+		console.error('Service Worker registration failed:', error);
+	  });
+  }
+               </code></pre>
+              </div>
+              <p>
+                To install the Service Worker in our project , you'll need to
+                listen for the install event, which fires when the Service
+                Worker is first installed. Inside this event listener, you can
+                cache files and assets using the Cache API
+              </p>
+              <div class="docs-code-block">
+                <pre
+                  class="shadow-lg rounded"
+                ><code class="json hljs" style="color: white;">  
+self.addEventListener("install", event => {
+	self.skipWaiting();
+  });
+               </code></pre>
+              </div>
+              <p>
+                After the Service Worker is installed, it will be in a "waiting"
+                state until it is activated. You can listen for the activate
+                event to perform any necessary cleanup, like deleting old
+                caches.
+              </p>
+              <div class="docs-code-block">
+                <pre
+                  class="shadow-lg rounded"
+                ><code class="json hljs" style="color: white;">  
+self.addEventListener("activate", function (event) {
+	event.waitUntil(self.clients.claim());
+  })
+               </code></pre>
+              </div>
+              <p>
+                In your Service Worker file, you can listen for network requests
+                using the fetch event. Inside this event listener, you can
+                respond to the request using a cached asset or by making a new
+                network request.
+              </p>
+              <div class="docs-code-block">
+                <pre
+                  class="shadow-lg rounded"
+                ><code class="json hljs" style="color: white;">  
+self.addEventListener("fetch", event => {
+	event.respondWith(
+	  caches.match(event.request)
+		.then(response => {
+		  if (response) {
+			return response;
+		  }
+		  return fetch(event.request);
+		})
+	);
+  });
+               </code></pre>
+              </div>
+              <!--//docs-code-block-->
+            </section>
+            <!--//section-->
+            <!--//section-->
+          </article>
+          <!--//docs-article-->
+
+          <article class="docs-article" id="section-5">
+            <header class="docs-header">
+              <h1 class="docs-heading">Bridge to container app</h1>
+              <section class="docs-intro">
+                <p>
+                  Section intro goes here. Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Quisque finibus condimentum nisl
+                  id vulputate. Praesent aliquet varius eros interdum suscipit.
+                  Donec eu purus sed nibh convallis bibendum quis vitae turpis.
+                  Duis vestibulum diam lorem, vitae dapibus nibh facilisis a.
+                  Fusce in malesuada odio.
+                </p>
+              </section>
+              <!--//docs-intro-->
+            </header>
+            <section class="docs-section" id="item-5-1">
+              <h2 class="section-heading">Grey background</h2>
+              <p>
+                Vivamus efficitur fringilla ullamcorper. Cras condimentum
+                condimentum mauris, vitae facilisis leo. Aliquam sagittis purus
+                nisi, at commodo augue convallis id. Sed interdum turpis quis
+                felis bibendum imperdiet. Mauris pellentesque urna eu leo
+                gravida iaculis. In fringilla odio in felis ultricies porttitor.
+                Donec at purus libero. Vestibulum libero orci, commodo nec arcu
+                sit amet, commodo sollicitudin est. Vestibulum ultricies
+                malesuada tempor.
+              </p>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-5-2">
+              <h2 class="section-heading">Online propmt</h2>
+              <p>
+                Vivamus efficitur fringilla ullamcorper. Cras condimentum
+                condimentum mauris, vitae facilisis leo. Aliquam sagittis purus
+                nisi, at commodo augue convallis id. Sed interdum turpis quis
+                felis bibendum imperdiet. Mauris pellentesque urna eu leo
+                gravida iaculis. In fringilla odio in felis ultricies porttitor.
+                Donec at purus libero. Vestibulum libero orci, commodo nec arcu
+                sit amet, commodo sollicitudin est. Vestibulum ultricies
+                malesuada tempor.
+              </p>
+            </section>
+            <!--//section-->
+            <!--//section-->
+          </article>
+          <!--//docs-article-->
+          <!--//docs-article-->
+
+          <!--//docs-article-->
+          <!--//docs-article-->
+
+          <!--//docs-article-->
+        </div>
+      </div>
+    </div>
+    <!--//docs-wrapper-->
+
+    <!-- Javascript -->
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Page Specific JS -->
+    <script src="assets/plugins/smoothscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script>
+    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+    <script src="assets/js/docs.js"></script>
+  </body>
+</html>
